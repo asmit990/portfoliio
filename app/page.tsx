@@ -120,7 +120,7 @@ export default function Page() {
                       className="h-6 w-20 rounded-sm bg-neutral-900 px-4 text-white shadow-sm hover:bg-neutral-900/90 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1nEKCPIjHtLNK6dXzufvtKZXiZ6WCXqxy/view?usp=sharing"
+                        href=""
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="View Resume"
