@@ -346,7 +346,7 @@ export default function Page() {
                     <li>
                       <AchievementItem
                         title="Kendriya Vidyalaya IIT Kanpur"
-                        date="2021 – 2022"
+                        date="2021 – 2023"
                         description="CBSE Class XII"
                       />
                     </li>
