@@ -11,7 +11,7 @@ export default function StructuredData() {
       jobTitle: "Backend Engineer",
       description:
         "Backend-focused developer building scalable systems, webhook infrastructure, and event-driven architectures.",
-      url: "https://asmitpandey.dev",
+      url: "https://asmit.fun",
       image:
         "/facedemo.jpeg",
       email: "asmitpandeyw4354@gmail.com",

@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://asmit.fun"),
   title: "Asmit Pandey - Backend Engineer | Portfolio",
   description:
     "Backend-focused developer building scalable systems, webhook infrastructure, and event-driven architectures.",
@@ -79,16 +80,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://asmitpandey.dev",
+    url: "https://asmit.fun",
     siteName: "Asmit Pandey Portfolio",
     title: "Asmit Pandey - Backend Engineer",
     description:
       "Backend-focused developer building scalable systems, webhook infrastructure, and event-driven architectures.",
     images: [
       {
-        url: "https://iili.io/KB9qfG1.png",
-        width: 1200,
-        height: 630,
+        url: "/facedemo.jpeg",
+        width: 1086,
+        height: 724,
         alt: "Asmit Pandey - Backend Engineer Portfolio",
       },
     ],
@@ -100,7 +101,7 @@ export const metadata: Metadata = {
     title: "Asmit Pandey - Backend Engineer",
     description:
       "Backend-focused developer building scalable systems, webhook infrastructure, and event-driven architectures.",
-    images: ["https://iili.io/KB9qfG1.png"],
+    images: ["/facedemo.jpeg"],
   },
 
   verification: {
@@ -116,22 +117,22 @@ export const metadata: Metadata = {
     "contact:country_name": "India",
     "contact:region": "Delhi",
     "contact:locality": "New Delhi",
-    "og:image:width": "1200",
-    "og:image:height": "630",
-    "og:image:type": "image/png",
+    "og:image:width": "1086",
+    "og:image:height": "724",
+    "og:image:type": "image/jpeg",
     "og:image:alt": "Asmit Pandey - Backend Engineer Portfolio",
     "og:site_name": "Asmit Pandey Portfolio",
     "og:locale": "en_US",
     "og:type": "website",
-    "og:url": "https://asmitpandey.dev",
+    "og:url": "https://asmit.fun",
     "og:title": "Asmit Pandey - Backend Engineer",
     "og:description":
       "Backend-focused developer building scalable systems, webhook infrastructure, and event-driven architectures.",
-    "og:image": "https://iili.io/KB9qfG1.png",
+    "og:image": "https://asmit.fun/facedemo.jpeg",
     "twitter:image:alt": "Asmit Pandey - Backend Engineer Portfolio",
-    "twitter:domain": "asmitpandey.dev",
-    "twitter:url": "https://asmitpandey.dev",
-    "whatsapp:image": "https://iili.io/KB9qfG1.png",
+    "twitter:domain": "asmit.fun",
+    "twitter:url": "https://asmit.fun",
+    "whatsapp:image": "https://asmit.fun/facedemo.jpeg",
     "whatsapp:title": "Asmit Pandey - Backend Engineer",
     "whatsapp:description":
       "Backend-focused developer building scalable systems, webhook infrastructure, and event-driven architectures.",
