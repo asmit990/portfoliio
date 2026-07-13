@@ -182,21 +182,55 @@ export default function Page() {
             <FadeInText delay={0.5}>
               <section className="mt-4 m-2 justify-center items-center text-[13px] leading-6 text-neutral-600 dark:text-neutral-300 space-y-3">
                 <p>
-                  I specialize in backend engineering with a focus on reliability, performance, and distributed system design.
+                  Backend engineer focused on scalable, event-driven systems and dependable developer tools.
                 </p>
                 <div className="pl-4 border-l-2 border-neutral-200 dark:border-neutral-800 space-y-1">
-                  <p>• Scalable REST APIs</p>
-                  <p>• Queue-based asynchronous processing</p>
-                  <p>• Secure webhook delivery systems</p>
-                  <p>• Microservices architecture</p>
-                  <p>• Database performance optimization</p>
-                  <p>• Production-grade error monitoring systems</p>
+                  <p>• Event-driven microservices and distributed systems</p>
+                  <p>• REST APIs, real-time applications, and data platforms</p>
+                  <p>• Performance, reliability, and observability</p>
                 </div>
                 <p>
-                  I prefer building systems that are measurable, stress-tested, and architected for failure handling rather than just feature-complete.
+                  I build products from architecture through deployment, with an emphasis on measurable performance and clear failure handling.
                 </p>
               </section>
             </FadeInText>
+
+            {/* Experience */}
+            <SlideUp delay={0.2}>
+              <section id="experience" className="mt-8 section-lines p-4">
+                <FadeInText delay={0.1}>
+                  <h3 className="mb-4 text-sm font-semibold text-neutral-900 dark:text-neutral-50">
+                    Experience.
+                  </h3>
+                </FadeInText>
+                <div className="space-y-2">
+                  <SlideInLeft delay={0.1}>
+                    <WorkItem
+                      company="Adzuna"
+                      role="Backend Developer Intern"
+                      period="Dec 2024 – Mar 2025 · Remote"
+                      summary="Built and maintained scalable backend services and RESTful APIs for platform features used by thousands of users. Optimized database queries and server-side logic to improve response times and reduce infrastructure load, while collaborating in agile sprints and code reviews."
+                    />
+                  </SlideInLeft>
+                  <SlideInRight delay={0.1}>
+                    <WorkItem
+                      company="Oddminders"
+                      role="Independent Contractor"
+                      period="Mar 2025 – May 2026 · Remote"
+                      summary="Delivered scalable web solutions for clients, owning work end-to-end from requirements gathering through deployment."
+                    />
+                  </SlideInRight>
+                  <SlideInLeft delay={0.2}>
+                    <WorkItem
+                      company="Google Developer Groups (GDG) GBU"
+                      role="Core Member"
+                      period="2024 – Present · Greater Noida, UP"
+                      summary="Organized technical workshops and community events that enabled hands-on learning for 200+ students, and collaborated with student developers to promote web development, open source, and technical awareness."
+                    />
+                  </SlideInLeft>
+                </div>
+              </section>
+            </SlideUp>
 
             {/* Projects */}
             <SlideUp delay={0.2}>
@@ -209,63 +243,67 @@ export default function Page() {
                 <div className="space-y-2">
                   <SlideInLeft delay={0.1}>
                     <ProjectListItem
-                      title="HookRelay — Webhook Delivery Infrastructure"
+                      title="Fraud Detection Platform"
                       links={[]}
                       bullets={[
-                        "Production-grade webhook delivery system inspired by Stripe and GitHub notification models.",
-                        "Decoupled API server and async worker architecture using Redis + BullMQ",
-                        "Instant HTTP 200 responses with background job processing",
-                        "Exponential retry logic (3s → 9s → 27s → 81s → 243s) with Dead Letter Queue support",
-                        "HMAC-SHA256 payload signing for tamper detection",
-                        "Redis-based rate limiting (100 events/min per API key)",
-                        "Stress tested with 50,000 concurrent users",
-                        "15/15 integration tests passing"
+                        "Architected a distributed fraud detection platform with four event-driven microservices communicating through Apache Kafka, enabling fault-tolerant transaction processing and sub-500ms detection latency.",
+                        "Developed a hybrid risk-scoring engine combining five rule-based checks with Google Gemini AI (40% rules, 60% AI), classifying transactions as LOW, MEDIUM, or HIGH risk with explainable reasoning.",
+                        "Implemented Redis-backed velocity checks, geo-location anomaly detection, and device fingerprinting; automated high-risk alerts through Kafka consumers and Nodemailer."
                       ]}
-                      tags={["Node.js", "Express", "PostgreSQL", "Redis", "BullMQ", "JWT", "HMAC-SHA256"]}
+                      tags={["Node.js", "TypeScript", "Kafka", "Redis", "PostgreSQL", "Gemini AI", "Docker"]}
                     />
                   </SlideInLeft>
                   <SlideInRight delay={0.1}>
                     <ProjectListItem
-                      title="ErrorHub — Error Monitoring Platform"
+                      title="Qlue"
                       links={[]}
                       bullets={[
-                        "Modular error monitoring system with SDK, CLI, backend API, and dashboard.",
-                        "Four-layer architecture (SDK, CLI, API, Dashboard)",
-                        "Middleware-based API key validation with project isolation",
-                        "SDK auto-captures uncaughtException and unhandledRejection",
-                        "CLI tool with project linking and API key verification",
-                        "Normalized PostgreSQL schema for multi-project isolation"
+                        "Engineered an AI-powered BI dashboard that converts natural language to SQL using Google Gemini, enabling non-technical users to analyze datasets interactively.",
+                        "Implemented RabbitMQ-based concurrent query handling with WebSocket streaming and schema-agnostic CSV ingestion that auto-generates PostgreSQL tables across six chart types.",
+                        "Implemented JWT authentication, bcrypt password hashing, and email password reset; deployed with Netlify, Render, and NeonDB in a Turborepo monorepo."
                       ]}
                       tags={[
-                        "Node.js",
-                        "Express",
                         "React",
+                        "Node.js",
                         "TypeScript",
+                        "WebSocket",
+                        "RabbitMQ",
+                        "Gemini AI",
                         "PostgreSQL"
                       ]}
                     />
                   </SlideInRight>
                   <SlideInLeft delay={0.2}>
                     <ProjectListItem
-                      title="Microservices Alert System — Real-Time Notification Platform"
+                      title="MiniCDN"
                       links={[]}
                       bullets={[
-                        "Distributed notification platform using message-based architecture.",
-                        "Three independent services (Auth, Messaging, Notifications)",
-                        "RabbitMQ-based async producer-consumer communication",
-                        "Dockerized environment with Docker Compose",
-                        "JWT-based authentication"
+                        "Built a distributed CDN with edge nodes in Mumbai, London, and NYC using a TypeScript API gateway with GeoIP routing and automatic failover. A Go LRU cache reduced latency from ~300ms to ~4ms (75×).",
+                        "Designed Redis Pub/Sub cache invalidation that propagates PURGE events to every edge in under 5ms, and used singleflight to collapse 1,000 concurrent misses into one origin fetch.",
+                        "Instrumented eight Prometheus metrics per edge; achieved a 90%+ cache hit rate and sub-5ms p95 response time with a MinIO-backed, S3-compatible origin."
                       ]}
                       tags={[
-                        "Node.js",
+                        "Go",
                         "TypeScript",
-                        "RabbitMQ",
+                        "Redis",
+                        "MinIO",
                         "Docker",
-                        "Nginx",
-                        "JWT"
+                        "Prometheus"
                       ]}
                     />
                   </SlideInLeft>
+                  <SlideInRight delay={0.2}>
+                    <ProjectListItem
+                      title="ErrorHub"
+                      links={[]}
+                      bullets={[
+                        "Developed a four-layer error monitoring platform comprising SDK, CLI, API, and dashboard.",
+                        "Built SDKs that auto-capture uncaughtException and unhandledRejection events with stack-trace metadata.",
+                        "Designed REST APIs with API-key validation and PostgreSQL-based project isolation for secure multi-project error tracking."
+                      ]}
+                      tags={["React", "TypeScript", "Node.js", "Express", "PostgreSQL"]}
+                    />
+                  </SlideInRight>
                 </div>
                 <FadeInText delay={0.2}>
                   <div className="mt-3 flex justify-center">
@@ -295,18 +333,18 @@ export default function Page() {
                   <SlideInLeft delay={0.1}>
                     <li>
                       <AchievementItem
-                        title="4th Place — Hackathon (40+ teams)"
-                        date="Recent"
-                        description="Delivered production-ready full-stack expense tracker in 7 hours."
+                        title="2nd Place — Hackathon (40+ teams)"
+                        date="2024"
+                        description="Delivered a production-ready full-stack expense tracker within a 7-hour deadline."
                       />
                     </li>
                   </SlideInLeft>
                   <SlideInRight delay={0.1}>
                     <li>
                       <AchievementItem
-                        title="Web Development Head — Frames Club, GBU"
-                        date="Past"
-                        description="Led web development initiatives and managed technical projects for the club."
+                        title="Web Development Head — Frames Club"
+                        date="2024"
+                        description="Directed the end-to-end design and launch of the club’s official website."
                       />
                     </li>
                   </SlideInRight>
@@ -314,8 +352,8 @@ export default function Page() {
                     <li>
                       <AchievementItem
                         title="Core Member — GDG GBU"
-                        date="Past"
-                        description="Organized technical workshops and events for 200+ students."
+                        date="2024 – Present"
+                        description="Organized technical workshops and community events for 200+ students."
                       />
                     </li>
                   </SlideInLeft>
@@ -347,15 +385,6 @@ export default function Page() {
                       />
                     </li>
                   </SlideInLeft>
-                  <SlideInRight delay={0.1}>
-                    <li>
-                      <AchievementItem
-                        title="Kendriya Vidyalaya IIT Kanpur"
-                        date="2021 – 2023"
-                        description="CBSE Class XII"
-                      />
-                    </li>
-                  </SlideInRight>
                 </ul>
               </section>
             </SlideUp>
@@ -419,7 +448,9 @@ export default function Page() {
                       <Github className="h-4 w-4" />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/asmitpandey/"
+                      href="https://www.linkedin.com/in/asmithuyar"
+                      target="_blank"
+                      rel="noreferrer"
                       aria-label="Open LinkedIn"
                       className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900"
                     >
