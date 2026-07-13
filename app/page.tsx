@@ -11,6 +11,7 @@ import { WorkItem } from "@/components/work-item";
 import { ProjectListItem } from "@/components/project-list-item";
 import { AchievementItem } from "@/components/achievement-item";
 import { Dock } from "@/components/dock";
+import { GitHubContributions } from "@/components/github-contributions";
 import { SkillsDraggable } from "@/components/skills-draggable";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
@@ -277,6 +278,10 @@ export default function Page() {
                   </div>
                 </FadeInText>
               </section>
+            </SlideUp>
+
+            <SlideUp delay={0.25}>
+              <GitHubContributions />
             </SlideUp>
 
             <SlideUp delay={0.3}>
