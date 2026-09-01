@@ -439,7 +439,7 @@ export default function Page() {
                       <Twitter className="h-4 w-4" />
                     </a>
                     <a
-                      href="https://github.com/ASMIT990"
+                      href="https://github.com/asmit990"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub"
