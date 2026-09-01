@@ -14,13 +14,13 @@ export function Dock() {
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com/asmitpandey",
+      href: "https://twitter.com/asmitwt",
     },
-    { icon: Github, label: "GitHub", href: "https://github.com/asmitpandey" },
+    { icon: Github, label: "GitHub", href: "https://github.com/asmit990" },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/asmitpandey",
+      href: "https://www.linkedin.com/in/asmithuyar",
     },
     { icon: Mail, label: "Email", href: "mailto:asmitpandeyw4354@gmail.com" },
   ];
